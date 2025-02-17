@@ -1,0 +1,168 @@
+.logo {
+    width: 17%;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-45%);
+}
+
+.conteudo {
+    display: grid;
+    justify-items: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-45%);
+}
+
+.conteudo span {
+    font-size: 1.5rem;
+    margin: 0.5em;
+}
+
+.conteudo button {
+    background-color: #d10e0e;
+    color: #ffffff;
+    border: 0;
+    padding: 1em;
+    width: 10em;
+    border-radius: 6.25rem;
+    transition: 1.3s;
+}
+
+.conteudo button:hover {
+    background-color: #9a0e0e;
+    scale: 1.1;
+}
+
+.contener {
+    position: absolute;
+    top: 60%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.contener .point {
+    background-color: #262626;
+    width: 1.5em;
+    height: 1.5em;
+    border: 0;
+    border-radius: 50%;
+    margin: 0 1em;
+    position: relative;
+    top: 0;
+}
+
+.contener #p1 { animation: subir1 3s cubic-bezier(0.08, -0.91, 0.95, 2.05) infinite; }
+.contener #p2 { animation: subir2 3s cubic-bezier(0.08, -0.91, 0.95, 2.05) infinite; }
+.contener #p3 { animation: subir3 3s cubic-bezier(0.08, -0.91, 0.95, 2.05) infinite; }
+
+@keyframes subir1 {
+    0%, 11%, 88%, 100% { top: 0; }
+    22%, 33%, 44%, 55%, 66%, 77% { top: -2em; }
+}
+
+@keyframes subir2 {
+    0%, 11%, 22%, 77%, 88%, 100% { top: 0; }
+    33%, 44%, 55%, 66% { top: -2em; }
+}
+
+@keyframes subir3 {
+    0%, 11%, 22%, 33%, 66%, 77%, 88%, 100% { top: 0; }
+    44%, 55% { top: -2em; }
+}
+
+/* Media Queries para responsividade */
+
+/* Para telas menores que 1024px (tablets) */
+@media (max-width: 1024px) {
+    .logo {
+        width: 25%;
+        top: 10%;
+    }
+
+    .conteudo {
+        top: 60%;
+    }
+
+    .conteudo span {
+        font-size: 1.2rem;
+    }
+
+    .conteudo button {
+        width: 8em;
+        padding: 0.8em;
+    }
+
+    .contener {
+        top: 55%;
+    }
+
+    .contener .point {
+        width: 1.2em;
+        height: 1.2em;
+    }
+}
+
+/* Para telas menores que 768px (smartphones) */
+@media (max-width: 768px) {
+    .logo {
+        width: 30%;
+        top: 8%;
+    }
+
+    .conteudo {
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .conteudo span {
+        font-size: 1rem;
+    }
+
+    .conteudo button {
+        width: 7em;
+        padding: 0.6em;
+    }
+
+    .contener {
+        top: 50%;
+    }
+
+    .contener .point {
+        width: 1em;
+        height: 1em;
+        margin: 0 0.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 40%;
+        top: 5%;
+    }
+
+    .conteudo {
+        top: 50%;
+    }
+
+    .conteudo span {
+        font-size: 0.9rem;
+    }
+
+    .conteudo button {
+        width: 6em;
+        padding: 0.5em;
+    }
+
+    .contener {
+        top: 45%;
+    }
+
+    .contener .point {
+        width: 0.8em;
+        height: 0.8em;
+    }
+}

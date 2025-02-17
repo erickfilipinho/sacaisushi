@@ -1,0 +1,119 @@
+.logo {
+    position: absolute;
+    top: 0;
+    width: 7%;
+}
+
+.msg {
+    display: grid;
+    justify-items: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-45%);
+}
+
+.ajuda_img {
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-45%);
+}
+
+input {
+    background-color: #262626;
+    color: #ffffff;
+    padding: 1em;
+    border: 0;
+    border-radius: 3.1rem;
+    width: 50em;
+    margin-bottom: 2em;
+}
+
+input::placeholder {
+    color: #e3e3e3;
+}
+
+button {
+    background-color: #d10e0e;
+    color: #ffffff;
+    border: 0;
+    padding: 1em;
+    width: 7em;
+    border-radius: 0.9rem;
+    transition: 1.3s;
+}
+
+button:hover {
+    background-color: #9a0e0e;
+    scale: 1.1;
+}
+
+/* Media Queries para responsividade */
+
+/* Para telas menores que 1024px (tablets) */
+@media (max-width: 1024px) {
+    .logo {
+        width: 10%;
+    }
+
+    .ajuda_img {
+        width: 50%;
+    }
+
+    input {
+        width: 40em;
+    }
+}
+
+/* Para telas menores que 768px (smartphones) */
+@media (max-width: 768px) {
+    .logo {
+        width: 15%;
+    }
+
+    .msg {
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .ajuda_img {
+        width: 60%;
+    }
+
+    input {
+        width: 30em;
+        padding: 0.8em;
+    }
+
+    button {
+        width: 6em;
+        padding: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 20%;
+    }
+
+    .msg {
+        top: 55%;
+    }
+
+    .ajuda_img {
+        width: 75%;
+    }
+
+    input {
+        width: 90%;
+        padding: 0.7em;
+    }
+
+    button {
+        width: 5em;
+        padding: 0.7em;
+    }
+}
